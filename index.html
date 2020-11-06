@@ -8,12 +8,161 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body style="width: 50%; margin-left:auto; margin-right:auto;">
-    <h1>Notion.css</h1>
+    <h1 class="title">Notion.css</h1>
     <p>Notion.css is a minimal CSS framework that resembles the aesthetic of the note taking app, <span><a href="https://notion.so" target="_blank">Notion</a></span></p>
-    <p>You can use Notion.css if you're making a simple website and don't want to spend much time in styling, yet have a pleasing design.</p>
+    <p>You can use Notion.css if you're making a simple website and don't want to spend much time in styling, yet have a pleasing design. Heck, you can even
+        use it to bring in all the elements you use in your Notion page to your HTML
+    </p>
     <div style="display: flex;">
         <a href="https://github.com/fillerInk/notion.css" target="_blank"><i class="fa fa-github" id='github' aria-hidden="true" style=" font-size: larger;"> GitHub</i></a>
     </div>
+    <h2 class="title">Installation</h2>
+    <p>Import the CSS files by pasting this into the <code>&lt;head&gt;</code> of your HTML</p>
+    <div class="code">
+        &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notion.css&gt;
+    </div>
+    <h2 class="title">Elements</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h3>Subtitles</h3>
+    <p>You can add subtitles by adding the subtitle class to your headings like so</p>
+    <div class="code">
+        &lt;h1 class="subtitle"&gt;This is a subtitle&lt;/h1&gt;
+        <br><br>
+        &lt;h2 class="subtitle"&gt;This is a smaller subtitle&lt;/h2&gt;
+    </div>
+
+    <h1 class="subtitle">Subtitle 1</h1>
+    <h2 class="subtitle">Subtitle 2</h2>
+    <h3 class="subtitle">Subtitle 3</h3>
+    <h4 class="subtitle">Subtitle 4</h4>
+    <h5 class="subtitle">Subtitle 5</h5>
+    <h6 class="subtitle">Subtitle 6</h5>
+
+    <h3>Typography</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, 
+        quis ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit.
+        Duis ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius 
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu 
+        felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui 
+        aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora torquent 
+        per conubia nostra, per inceptos himenaeos. <br> <strong>This is some strong text,</strong> this is 
+        normal, <b>this is bold,</b> <em>and this is in italics!</em> And, <a href="/">here</a>'s a link. 
+    </p>
+    <h3>Buttons</h3>
+    <p>Here are some buttons</p>
+
+    <div class="code">
+        &lt;button&gt;Click Me!&lt;/button&gt;
+    </div>
+    <button>Click Me!</button>
+
+    <div class="code">
+        &lt;button class="button-primary"&gt;Click Me!&lt;/button&gt;
+    </div>
+    <button class="button-primary">Click Me!</button>
+
+    <h3>Form Elements</h3>
+    <p>Here's a form</p>
+
+    <form action="/">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="email"><br>
+        <label for="phone">Phone</label><br>
+        <input type="number" name="phone" id="phone" placeholder="Phone"><br>
+        <label for="bio">Bio</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About yourself"></textarea><br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Female</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Male</label><br>
+        <input type="radio" id="nb" name="gender" value="nb">
+        <label for="other">Non-Binary</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Prefer not to reveal</label> <br> <br>
+
+        <input type="checkbox" id="checkbox" name="checkbox" value="status">
+        <label for="status">I understand</label><br>
+    </form>
+
+    <h3>Code</h3>
+    <p>You can add blocks of code in your page like so</p>
+    <div class="code">
+        &lt;div class="code"&gt; </br>
+        const your_code = here; </br>
+        &lt;/div&gt;
+    </div>
+
+    <h3>Navigation</h3>
+    <p>You can eaily create a navigation bar</p>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+
+
+    <h3>Others</h3>
+    Here's a list
+    <ul>
+        <li>With</li>
+        <li>some</li>
+        <li>list</li>
+        <li>items</li>
+    </ul>
+
+    <p>This is what a normal HTML table looks like with Notion.css</p>
+    <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Coolness</th>
+        </tr>
+        <tr>
+          <td>Vegeta</td>
+          <td>48</td>
+          <td> > 9000</td>
+        </tr>
+        <tr>
+          <td>Elon Musk</td>
+          <td>49</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+            <td>Sreeram</td>
+            <td>21</td>
+            <td>100</td>
+        </tr>
+    </table>
+
+    <p>Images</p>
+    <p>Here's a cute pic of a cat while we're at it</p>
+
+    <p>Quotes</p>
+    <p>You can add blocks of code in your page like so</p>
+    <div class="code">
+        &lt;div class="quote"&gt; </br>
+        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere. - Anakin Skywalker <br>
+        &lt;/div&gt;
+    </div>
+
+    <div class="quote">
+        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere. - Anakin Skywalker
+    </div>
+
+
     <hr>
     <p>Notion.css is made by <a href="https://sreeram.codes" target="_blank">@fillerInk</a>.</p>
 </body>
