@@ -6,6 +6,7 @@
     <title>Notion.css</title>
     <link rel="stylesheet" href="src/notion.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.css" rel="stylesheet" />
 </head>
 <body style="width: 50%; margin-left:auto; margin-right:auto;">
     <h1 class="title">Notion.css</h1>
@@ -14,14 +15,18 @@
         use it to bring in all the elements you use in your Notion page to your HTML
     </p>
     <div style="display: flex;">
-        <a href="https://github.com/fillerInk/notion.css" target="_blank" style="font-size: x-large; padding: auto 0;"><i class="fa fa-github" id='github' aria-hidden="true" style=" font-size: xxx-large; margin-right:5px;"></i>GitHub</a>
+        <svg style='margin-top:auto; margin-bottom:auto; margin-right:10px;' xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <p><a href="https://github.com/fillerInk/notion.css" target="_blank" style="font-size: x-large; text-decoration:none;">GitHub</a></p>
     </div>
     <h2 class="title">Installation</h2>
     <p>Import the CSS files by pasting this into the <code>&lt;head&gt;</code> of your HTML</p>
+   
     <div class="code">
-        &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notion.css&gt;
+        <code class="lang-html">
+         &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notion.css"&gt;
+        </code>
     </div>
-    <h2 class="title">Elements</h2>
+    <h2 class="title">Components</h2>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -32,11 +37,15 @@
     <h3 class="title">Subtitles</h3>
     <p>You can add subtitles by adding the subtitle class to your headings like so</p>
     <div class="code">
-        &lt;h1 class="subtitle"&gt;This is a subtitle&lt;/h1&gt;
-        <br><br>
-        &lt;h2 class="subtitle"&gt;This is a smaller subtitle&lt;/h2&gt;
+        <code class="lang-html">
+    &lt;h1 class="subtitle"&gt;This is a subtitle&lt;/h1&gt;
+        </code>
     </div>
-
+    <div class="code">
+        <code class="lang-html">
+    &lt;h2 class="subtitle"&gt;This is a smaller subtitle&lt;/h2&gt;
+        </code>
+    </div>
     <h1 class="subtitle">Subtitle 1</h1>
     <h2 class="subtitle">Subtitle 2</h2>
     <h3 class="subtitle">Subtitle 3</h3>
@@ -46,25 +55,27 @@
 
     <h3 class="title">Typography</h3>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, 
-        quis ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit.
-        Duis ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius 
-        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu 
-        felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui 
-        aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora torquent 
-        per conubia nostra, per inceptos himenaeos. <br> <strong>This is some strong text,</strong> this is 
+        Welcome to Fight Club. The first rule of Fight Club is: you do not talk about Fight Club. The second rule of Fight Club is: you DO NOT talk about Fight Club! Third rule of Fight Club: if someone yells “stop!”, goes limp, or taps out, the fight is over. Fourth rule: only two guys to a fight. Fifth rule: one fight at a time, fellas. Sixth rule: the fights are bare knuckle. No shirt, no shoes, no weapons. Seventh rule: fights will go on as long as they have to. And the eighth and final rule: if this is your first time at Fight Club, you have to fight.
+<br><br>
+Man, I see in fight club the strongest and smartest men who’ve ever lived. I see all this potential, and I see squandering. God damn it, an entire generation pumping gas, waiting tables; slaves with white collars. Advertising has us chasing cars and clothes, working jobs we hate so we can buy shit we don’t need. We’re the middle children of history, man. No purpose or place. We have no Great War. No Great Depression. Our Great War’s a spiritual war… our Great Depression is our lives. We’ve all been raised on television to believe that one day we’d all be millionaires, and movie gods, and rock stars. But we won’t. And we’re slowly learning that fact. And we’re very, very pissed off.
+ <br><br> <strong>This is some strong text,</strong> this is 
         normal, <b>this is bold,</b> <em>and this is in italics!</em> And, <a href="/">here</a>'s a link. 
     </p>
     <h3 class="title">Buttons</h3>
-    <p>Here are some buttons</p>
+    <p>Here's a regular button</p>
 
     <div class="code">
+    <code class="lang-html">
         &lt;button&gt;Click Me!&lt;/button&gt;
+    </code>
     </div>
     <button>Click Me!</button>
+    <p>And here's a primary button</p>
 
     <div class="code">
-        &lt;button class="primary"&gt;Click Me!&lt;/button&gt;
+        <code class="lang-html">
+            &lt;button class="primary"&gt;Click Me!&lt;/button&gt;
+        </code>
     </div>
     <button class="primary">Click Me!</button>
 
@@ -73,14 +84,14 @@
 
     <form action="/">
         <label for="name">Name</label><br>
-        <input type="text" name="name" id="name" placeholder="name"><br>
+        <input type="text" name="name" id="name" placeholder="John Doe"><br>
         <label for="email">Email</label><br>
-        <input type="email" name="email" id="email" placeholder="email"><br>
+        <input type="email" name="email" id="email" placeholder="johndoe@example.com"><br>
         <label for="phone">Phone</label><br>
-        <input type="number" name="phone" id="phone" placeholder="Phone"><br>
+        <input type="number" name="phone" id="phone" placeholder="+91 74852 6135"><br>
         <label for="bio">Bio</label><br>
         <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About yourself"></textarea><br><br>
-
+       
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Female</label><br>
         <input type="radio" id="female" name="gender" value="female">
@@ -96,35 +107,65 @@
 
     <h3 class="title">Code</h3>
     <p>You can add blocks of code in your page like so</p>
-    <div class="code">
-        &lt;div class="code"&gt; </br>
-        const your_code = here; </br>
-        &lt;/div&gt;
-    </div>
+    <pre style="padding:0px;"> 
+        <code class="lang-html">
+    &lt;pre&gt; </br>
+        &lt;code&gt; </br>
+            &nbsp;// your code here
+        &lt;/code&gt;
+    &lt;/pre&gt;
+
+        </code>
+    </pre>
 
     <h3 class="title">Navigation</h3>
-    <p>You can eaily create a navigation bar</p>
+    <p>Put up a navigation bar easily <br>(Here the navbar is only wide as the body of the HTML of this page is)</p>
 
-    <div class="code">
-        &lt;div class="topnav"&gt; </br>
-             &lt;a class="active" href="#home"> Home &lt;/a&gt; <br>
-             &lt;a href="#news"> News &lt;/a&gt;<br>
-             &lt;a href="#contact"> Contact &lt;/a&gt;<br>
-             &lt;a href="#about"> About &lt;/a&gt;<br>
-        &lt;/div&gt;
+    <pre style="padding:0px;"> 
+    <code class="lang-html">
+    &lt;div class="nav"&gt; 
+        &nbsp;&lt;div class="nav-left">
+        &nbsp;
+        &nbsp;&lt;/div&gt;
+        &nbsp;&lt;div class="nav-right">
+            &nbsp;&nbsp;&nbsp;&lt;a class="active" href="#home"> Home &lt;/a&gt; 
+            &nbsp;&nbsp;&nbsp;&lt;a href="#news"> News &lt;/a&gt;
+            &nbsp;&nbsp;&nbsp;&lt;a href="#contact"> Contact &lt;/a&gt;
+            &nbsp;&nbsp;&nbsp;&lt;a href="#about"> About &lt;/a&gt;
+        &nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+    </pre>
+
+    <div class="nav" style="border: 2px solid #37352f;">
+        <div class="nav-left" style="display: flex;">
+        </div>
+        <div class="nav-right" style="vertical-align:middle">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
     </div>
-
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+    <br>
+    <p>The Notion navbar recreated with Notion.css</p>
+<br>
+    <div class="nav">
+        <div class="nav-left" style="display: flex;">
+            <svg viewBox="0 0 120 126" class="notionLogo" style="width: 30px; height: 30px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 10px; margin-top:7px; margin-bottom:auto;"><path d="M 20.6927 21.9315C 24.5836 25.0924 26.0432 24.8512 33.3492 24.3638L 102.228 20.2279C 103.689 20.2279 102.474 18.7705 101.987 18.5283L 90.5477 10.2586C 88.3558 8.55699 85.4356 6.60818 79.8387 7.09563L 13.1433 11.9602C 10.711 12.2014 10.2251 13.4175 11.1939 14.3924L 20.6927 21.9315ZM 24.8281 37.9835L 24.8281 110.456C 24.8281 114.351 26.7745 115.808 31.1553 115.567L 106.853 111.187C 111.236 110.946 111.724 108.267 111.724 105.103L 111.724 33.1169C 111.724 29.958 110.509 28.2544 107.826 28.4976L 28.721 33.1169C 25.8018 33.3622 24.8281 34.8225 24.8281 37.9835ZM 99.5567 41.8711C 100.042 44.0622 99.5567 46.2512 97.3618 46.4974L 93.7143 47.2241L 93.7143 100.728C 90.5477 102.43 87.6275 103.403 85.1942 103.403C 81.2983 103.403 80.3226 102.186 77.4044 98.54L 53.5471 61.087L 53.5471 97.3239L 61.0964 99.0275C 61.0964 99.0275 61.0964 103.403 55.0057 103.403L 38.2148 104.377C 37.727 103.403 38.2148 100.973 39.9179 100.486L 44.2996 99.2717L 44.2996 51.36L 38.2158 50.8725C 37.728 48.6815 38.9431 45.5225 42.3532 45.2773L 60.3661 44.0631L 85.1942 82.0036L 85.1942 48.4402L 78.864 47.7136C 78.3781 45.0351 80.3226 43.0902 82.7569 42.849L 99.5567 41.8711ZM 7.5434 5.39404L 76.9175 0.285276C 85.4366 -0.445402 87.6285 0.0440428 92.983 3.93368L 115.128 19.4982C 118.782 22.1747 120 22.9034 120 25.8211L 120 111.187C 120 116.537 118.051 119.701 111.237 120.185L 30.6734 125.05C 25.5584 125.294 23.124 124.565 20.4453 121.158L 4.13735 99.9994C 1.21516 96.1048 0 93.191 0 89.7819L 0 13.903C 0 9.5279 1.94945 5.8785 7.5434 5.39404Z"></path> <h2 style="margin-top:7px; margin-bottom:0;">Notion</h2></svg> 
+        </div>
+        <div class="nav-right" style="vertical-align:middle">
+            <a class="active" href="#product">Product</a>
+            <a href="#download">Download</a>
+            <a href="#enterprise">Enterprise</a>
+            <a href="#resources">Resources</a>
+        </div>
     </div>
 
 
 
     <h3 class="title">Others</h3>
-    <p>Here's a list</p>
+    <p>Here's a <strong>list</strong></p>
     <ul>
         <li>With</li>
         <li>some</li>
@@ -132,7 +173,7 @@
         <li>items</li>
     </ul>
 
-    <p>This is what a normal HTML table looks like with Notion.css</p>
+    <p>This is what a normal HTML <strong>table</strong> looks like with Notion.css</p>
     <table style="width:100%">
         <tr>
           <th>Name</th>
@@ -156,28 +197,43 @@
         </tr>
     </table>
 
-    <p>Images</p>
+    <p><strong>Images</strong></p>
     <p>Here's a cute pic of a cat while we're at it</p>
-
-    <p>Quotes</p>
-    <p>You can add blocks of code in your page like so</p>
-    <div class="code">
-        &lt;blockquote&gt; </br>
-        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere. - Anakin Skywalker <br>
-        &lt;/blockquote&gt;
-    </div>
-
+    <img src="https://i.redd.it/zq5znfoczj511.jpg" alt="A cute cat" width="300px">
+    <p><strong>Quotes</strong></p>
+    <p>You can add blockquotes in your page like so</p>
+    
+    <pre style="padding:0px;"> 
+        <code class="lang-html">
+    &lt;blockquote&gt;
+      I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere.
+      &mdash; Anakin Skywalker 
+    &lt;/blockquote&gt;
+        </code>
+    </pre>
     <blockquote class="quote">
-        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere - Anakin Skywalker
-    </blockquote>
+        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere <br>
+    <span style="float:right">&mdash; Anakin Skywalker</span>
+    </blockquote>    
 
-    <h3>Projects using Notion.css</h3>
-
+    <h3 class="title">Inspiration</h3>
     <ul>
-        <li>Messier Dex, an encyclopedia and viewing guide for the Messier Objects</li>
+        <li><span><a href="https://thesephist.github.io/blocks.css/">Blocks.css</a></span> by <span> <a href="https://thesephist.com" target='_blank'>@thesephist</a></span></li>
+        <li><a href="https://watercss.kognise.dev/">Water.css</a> by <a href="https://kognise.dev/">@kognise</a></li>
     </ul>
 
+
+    <h3 class="title">Projects using Notion.css</h3>
+
+    <ul>
+        <li><a href="https://github.com/fillerInk/messier">Messier Dex</a>, an encyclopedia and viewing guide for the Messier Objects</li>
+    </ul>
+
+    <br>
     <hr>
     <p>Notion.css is made by <a href="https://sreeram.codes" target="_blank">@fillerInk</a>.</p>
-</body>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
+	<script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script></body>
 </html>

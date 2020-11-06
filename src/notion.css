@@ -1,14 +1,30 @@
 a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: underline;
+  padding:3px;
+}
+
+a:link{
     color: rgba(0, 0, 0, 0.6);
-    font-size: 20px;
-    line-height: 150%;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
-      "Helvetica Neue", sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    text-decoration: underline;
-  }
+}
+
+a:visited{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a:hover{
+    background: linear-gradient(#eee, #eee);
+    background-size: auto 4em;
+    background-repeat: no-repeat;
+    background-position: 0% 15px; 
+}
 
 body {
   font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
@@ -20,14 +36,13 @@ body {
   width: 100%;
   padding-bottom: 10px;
   border-bottom: 1px solid #37352f;
+  margin-top: 50px;
 }
 
 .subtitle {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
 }
-
-
 
 h1 {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
@@ -100,8 +115,6 @@ p {
   font-weight: 400;
 }
 
-
-
 button {
   background-color: #f0f2f4;
   color: #404b59;
@@ -139,6 +152,29 @@ button.primary:hover {
   color: #fff;
 }
 
+form {
+  font-size: 20px;
+}
+
+input,
+textarea {
+  font-size: 18px;
+  padding: 8px;
+  margin: 10px auto;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+
 .code {
   background-color: #f1f1f1;
   padding: 15px;
@@ -149,6 +185,11 @@ button.primary:hover {
   font-size: 17px;
   font-family: monospace;
   border-radius: 3px;
+  line-height: 1.25;
+}
+
+pre {
+  padding: 0px;
 }
 
 blockquote {
@@ -175,30 +216,76 @@ blockquote p {
   display: inline;
 }
 
-.topnav {
+.nav {
   background-color: #fff;
   overflow: hidden;
 }
 
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
 /* Style the links inside the navigation bar */
-.topnav a {
+.nav a {
   float: left;
   color: #37352f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 550;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.nav a.active {
   background-color: #fff;
   color: #37352f;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.nav a:hover {
   background-size: 1px;
   background-color: rgba(55, 53, 47, 0.08);
   color: #37352f;
+}
+
+ul {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+li {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+table {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+tr {
+  border: 1px solid #333;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+th {
+  border: 1px solid #333;
+  text-align: left;
+  padding: 20px;
 }
