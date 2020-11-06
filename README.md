@@ -1,2 +1,2 @@
 # notion.css
-A CSS framework that resembles the note taking app Notion
+A minimal CSS framework that resembles the aesthetic of the note taking app Notion
