@@ -1,6 +1,6 @@
 {
   "name": "notion.css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A minimal CSS framework that resembles the aesthetic of the note taking app Notion",
   "main": "index.js",
   "scripts": {
