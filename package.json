@@ -1,5 +1,5 @@
 {
-  "name": "notion.css",
+  "name": "@fillerink/notion.css",
   "version": "0.1.0",
   "description": "A minimal CSS framework that resembles the aesthetic of the note taking app Notion",
   "main": "index.js",
@@ -11,12 +11,15 @@
     "url": "git+https://github.com/fillerInk/notion.css.git"
   },
   "keywords": [
-    "CSS"
+    "CSS","Notion","Minimal","UI"
   ],
   "author": "Sreeram Venkitesh",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fillerInk/notion.css/issues"
   },
-  "homepage": "https://github.com/fillerInk/notion.css#readme"
+  "homepage": "https://github.com/fillerInk/notion.css#readme",
+  "publishConfig":{
+    "access": "public"
+  }
 }
