@@ -14,7 +14,7 @@
         use it to bring in all the elements you use in your Notion page to your HTML
     </p>
     <div style="display: flex;">
-        <a href="https://github.com/fillerInk/notion.css" target="_blank"><i class="fa fa-github" id='github' aria-hidden="true" style=" font-size: larger;"> GitHub</i></a>
+        <a href="https://github.com/fillerInk/notion.css" target="_blank" style="font-size: x-large; padding: auto 0;"><i class="fa fa-github" id='github' aria-hidden="true" style=" font-size: xxx-large; margin-right:5px;"></i>GitHub</a>
     </div>
     <h2 class="title">Installation</h2>
     <p>Import the CSS files by pasting this into the <code>&lt;head&gt;</code> of your HTML</p>
@@ -29,7 +29,7 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
 
-    <h3>Subtitles</h3>
+    <h3 class="title">Subtitles</h3>
     <p>You can add subtitles by adding the subtitle class to your headings like so</p>
     <div class="code">
         &lt;h1 class="subtitle"&gt;This is a subtitle&lt;/h1&gt;
@@ -44,7 +44,7 @@
     <h5 class="subtitle">Subtitle 5</h5>
     <h6 class="subtitle">Subtitle 6</h5>
 
-    <h3>Typography</h3>
+    <h3 class="title">Typography</h3>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, 
         quis ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit.
@@ -55,7 +55,7 @@
         per conubia nostra, per inceptos himenaeos. <br> <strong>This is some strong text,</strong> this is 
         normal, <b>this is bold,</b> <em>and this is in italics!</em> And, <a href="/">here</a>'s a link. 
     </p>
-    <h3>Buttons</h3>
+    <h3 class="title">Buttons</h3>
     <p>Here are some buttons</p>
 
     <div class="code">
@@ -64,11 +64,11 @@
     <button>Click Me!</button>
 
     <div class="code">
-        &lt;button class="button-primary"&gt;Click Me!&lt;/button&gt;
+        &lt;button class="primary"&gt;Click Me!&lt;/button&gt;
     </div>
-    <button class="button-primary">Click Me!</button>
+    <button class="primary">Click Me!</button>
 
-    <h3>Form Elements</h3>
+    <h3 class="title">Form Elements</h3>
     <p>Here's a form</p>
 
     <form action="/">
@@ -94,7 +94,7 @@
         <label for="status">I understand</label><br>
     </form>
 
-    <h3>Code</h3>
+    <h3 class="title">Code</h3>
     <p>You can add blocks of code in your page like so</p>
     <div class="code">
         &lt;div class="code"&gt; </br>
@@ -102,8 +102,17 @@
         &lt;/div&gt;
     </div>
 
-    <h3>Navigation</h3>
+    <h3 class="title">Navigation</h3>
     <p>You can eaily create a navigation bar</p>
+
+    <div class="code">
+        &lt;div class="topnav"&gt; </br>
+             &lt;a class="active" href="#home"> Home &lt;/a&gt; <br>
+             &lt;a href="#news"> News &lt;/a&gt;<br>
+             &lt;a href="#contact"> Contact &lt;/a&gt;<br>
+             &lt;a href="#about"> About &lt;/a&gt;<br>
+        &lt;/div&gt;
+    </div>
 
     <div class="topnav">
         <a class="active" href="#home">Home</a>
@@ -114,8 +123,8 @@
 
 
 
-    <h3>Others</h3>
-    Here's a list
+    <h3 class="title">Others</h3>
+    <p>Here's a list</p>
     <ul>
         <li>With</li>
         <li>some</li>
@@ -153,15 +162,20 @@
     <p>Quotes</p>
     <p>You can add blocks of code in your page like so</p>
     <div class="code">
-        &lt;div class="quote"&gt; </br>
+        &lt;blockquote&gt; </br>
         I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere. - Anakin Skywalker <br>
-        &lt;/div&gt;
+        &lt;/blockquote&gt;
     </div>
 
-    <div class="quote">
-        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere. - Anakin Skywalker
-    </div>
+    <blockquote class="quote">
+        I don't like sand. It's coarse, and rough, and irritating, and it gets everywhere - Anakin Skywalker
+    </blockquote>
 
+    <h3>Projects using Notion.css</h3>
+
+    <ul>
+        <li>Messier Dex, an encyclopedia and viewing guide for the Messier Objects</li>
+    </ul>
 
     <hr>
     <p>Notion.css is made by <a href="https://sreeram.codes" target="_blank">@fillerInk</a>.</p>

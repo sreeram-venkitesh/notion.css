@@ -1,5 +1,178 @@
+a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+      "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+body {
+  font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+}
+
 .title {
-  text-decoration: underline;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #37352f;
+}
+
+.subtitle {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+
+
+h1 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h4 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h5 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h6 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+
+
+button {
+  background-color: #f0f2f4;
+  color: #404b59;
+  border: 1px solid #f0f2f4;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 1px 2px;
+  border-radius: 6px;
+  align-items: center;
+  height: fit-content;
+  min-width: 180px;
+  font-size: large;
+  font-weight: 500;
+  padding: 12px;
+}
+
+button:hover {
+  background-color: #66778c;
+  color: #fff;
+}
+
+button.primary {
+  background-color: #e16259;
+  color: #fff;
+  border: 1px solid rgb(190, 86, 67);
+  border-radius: 3px;
+  align-items: center;
+  height: fit-content;
+  min-width: 180px;
+  font-size: large;
+  font-weight: 500;
+  padding: 12px;
+}
+
+button.primary:hover {
+  background-color: #cf534a;
+  color: #fff;
+}
+
+.code {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 17px;
+  font-family: monospace;
+  border-radius: 3px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 40px 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 20px;
+  line-height: 150%;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
 
 .topnav {
@@ -10,7 +183,7 @@
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #37352F;
+  color: #37352f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -19,13 +192,13 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #fff;
-    color: #37352F;
-  }
-  
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: rgba(55, 53, 47, 0.08);
-  color: #37352F;
+  background-color: #fff;
+  color: #37352f;
 }
 
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-size: 1px;
+  background-color: rgba(55, 53, 47, 0.08);
+  color: #37352f;
+}
